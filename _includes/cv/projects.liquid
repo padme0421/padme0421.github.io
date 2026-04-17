@@ -5,7 +5,9 @@
 <ul class="card-text font-weight-light list-group list-group-flush">
   {% for entry in entries %}
     <li class="list-group-item">
-      {% if entry.url %}
+      {% if entry.bullet %}
+        {{ entry.bullet | markdownify | remove: '<p>' | remove: '</p>' }}
+      {% elsif entry.url %}
         <h6 class="title font-weight-bold">
           <a href="{{ entry.url }}" target="_blank">{{ entry.name }}</a>
         </h6>

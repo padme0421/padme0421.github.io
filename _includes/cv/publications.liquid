@@ -33,10 +33,17 @@
               <h6 class="title font-weight-bold ml-1 ml-md-4">{{ entry.title }}</h6>
             {% endif %}
 
-            {% if entry.publisher %}
+            {% capture venue %}
+              {% if entry.publisher %}{{ entry.publisher }}{% elsif entry.journal %}{{ entry.journal }}{% endif %}
+            {% endcapture %}
+            {% if venue != '' %}
               <h6 class="ml-1 ml-md-4" style="font-size: 0.95rem">
-                <em>{{ entry.publisher }}</em>
+                <em>{{ venue }}</em>
               </h6>
+            {% endif %}
+
+            {% if entry.authors %}
+              <h6 class="ml-1 ml-md-4" style="font-size: 0.95rem">{{ entry.authors | join: ', ' | markdownify | remove: '<p>' | remove: '</p>' }}</h6>
             {% endif %}
 
             {% if entry.summary %}
@@ -53,10 +60,17 @@
               <h6 class="title font-weight-bold ml-1 ml-md-4">{{ entry.title }}</h6>
             {% endif %}
 
-            {% if entry.publisher %}
+            {% capture venue %}
+              {% if entry.publisher %}{{ entry.publisher }}{% elsif entry.journal %}{{ entry.journal }}{% endif %}
+            {% endcapture %}
+            {% if venue != '' %}
               <h6 class="ml-1 ml-md-4" style="font-size: 0.95rem">
-                <em>{{ entry.publisher }}</em>
+                <em>{{ venue }}</em>
               </h6>
+            {% endif %}
+
+            {% if entry.authors %}
+              <h6 class="ml-1 ml-md-4" style="font-size: 0.95rem">{{ entry.authors | join: ', ' | markdownify | remove: '<p>' | remove: '</p>' }}</h6>
             {% endif %}
 
             {% if entry.summary %}
