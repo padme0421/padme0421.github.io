@@ -17,9 +17,11 @@
     address = "Abu Dhabi, UAE",
     publisher = "Association for Computational Linguistics",
     url = "https://aclanthology.org/2025.coling-main.545/",
+    code = {https://github.com/padme0421/qe_ebm},
     pages = "8184--8196",
     abstract = "Reinforcement learning has shown great promise in aligning language models with human preferences in a variety of text generation tasks, including machine translation. For translation tasks, rewards can easily be obtained from quality estimation (QE) models which can generate rewards for unlabeled data. Despite its usefulness, reinforcement learning cannot exploit the gradients with respect to the QE score. We propose QE-EBM, a method of employing quality estimators as trainable loss networks that can directly backpropagate to the NMT model. We examine our method on several low and high resource target languages with English as the source language. QE-EBM outperforms strong baselines such as REINFORCE and proximal policy optimization (PPO) as well as supervised fine-tuning for all target languages, especially low-resource target languages. Most notably, for English-to-Mongolian translation, our method achieves improvements of 2.5 BLEU, 7.1 COMET-KIWI, 5.3 COMET, and 6.4 XCOMET relative to the supervised baseline.",
-    selected={true}
+    selected={true},
+    preview={qe_ebm.png}
 }
 
 @inproceedings{choi-etal-2025-bridg,
@@ -41,6 +43,7 @@
     pages = "26018--26042",
     ISBN = "979-8-89176-256-5",
     abstract = "Recent Large Language Models (LLMs) have demonstrated impressive translation performance without requiring fine-tuning on additional parallel corpora. However, they still face significant challenges in certain scenarios, particularly when translating low-resource languages. A common approach to address this issue is to provide external knowledge, such as few-shot examples, to assist LLMs in translating specific source sentences. However, this method is fundamentally limited by the quality or quantity of relevant sources, which cannot always be guaranteed. To reduce LLMs' reliance on external sources, we propose BridG MT, a method that combines Sentence Bridging, which generates a sequence of sentences as a bridge that gradually transition from easy-to-translate to more difficult, and Gradual MT, which sequentially translates these sentences using earlier translations as few-shot examples for subsequent ones. Experiments conducted on four LLMs across seven languages demonstrate that our method effectively enhances translation performance, even outperforming translation methods that rely on a large number of few-shot examples.",
-    selected={true}
+    selected={true},
+    preview={bridgmt.png}
 }
 

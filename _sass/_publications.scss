@@ -39,12 +39,17 @@
     li {
       margin-bottom: 1rem;
 
-      .preview {
-        display: inline-block;
-      }
-
       .abbr {
         margin-bottom: 0.5rem;
+
+        // Same thumbnail frame for every paper (image letterboxed inside the box)
+        img.preview {
+          width: 100%;
+          aspect-ratio: 1 / 1;
+          object-fit: contain;
+          object-position: top center;
+          display: block;
+        }
 
         abbr {
           display: inline-block;
