@@ -28,7 +28,7 @@ cv:
         start_date: "2026-04"
         end_date: "2026-07"
         highlights:
-          - LLM Post-Training
+          - Multi-agent reinforcement learning
       - company: "SKI-ML Lab, Seoul National University"
         position: Research Assistant
         location:
