@@ -62,7 +62,7 @@ cv:
           - "Seung-Woo Choi"
           - "*Gahyun Yoo*"
           - "Jay-Yoon Lee"
-        publisher: ACL Findings
+        publisher: "ACL Findings"
         date: "2025-07"
       - title: "Generalizing Numerical Reasoning in Table Data through Operation
           Sketches and Self-Supervised Learning"
@@ -71,7 +71,7 @@ cv:
           - "*Gahyun Yoo*"
           - "Hanseong Kim"
           - "Jay-Yoon Lee"
-        publisher: "[Under Review]"
+        publisher: "TACL"
         date: "2026"
     Awards:
       - title: "EFL 8th Best Speaker, SNUDA X KNC 2021"
