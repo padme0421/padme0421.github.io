@@ -1,98 +1,110 @@
 cv:
   name: "Gahyun Yoo"
   location:
-  email: "padme0421@snu.ac.kr"
+  email: "padme0421@gmail.com"
   social_networks:
     - network: "GitHub"
       username: "padme0421"
     - network: "LinkedIn"
       username: "gahyun-yoo-96b367346"
   sections:
-    Education:
-      - institution: Seoul National University, Graduate School of Data Science
-        area: ""
-        degree: PhD
-        start_date: "2025-09"
-        end_date: "present"
-        highlights:
-          - "Advisor: Jay-Yoon Lee"
+    education:
+      - institution: University of Southern California
+        area: "Computer Science"
+        degree: "MS"
+        start_date: "2026-08"
+        end_date: "2028-07"
       - institution: "Seoul National University"
         area: "Linguistics & Computer Science"
         degree: "BS"
         start_date: "2020-03"
         end_date: "2025-08"
-    Experience:
+    experience:
       - company: "DeepAuto"
-        position: "AI Engineer Intern"
+        position: "Agentic AI Engineer (Freelance)"
         location:
         start_date: "2026-04"
-        end_date: "2026-07"
+        end_date: "2026-06"
         highlights:
-          - Multi-agent reinforcement learning
-      - company: "SKI-ML Lab, Seoul National University"
-        position: Research Assistant
+          - Major conglomerate EPC automation project
+          - Proposed & developed data lakehouse system for the EPC domain comprised of a tri-store knowledge base
+          - Developed lakehouse-connected agents that each boosted recall for instrumentation drawing retrieval by 10%pp
+          - Containerization for efficient and reliable forward deployment
+          - Improved object detection by referencing project-specific legend sheets
+      - company: "SKI-ML Lab (PI: Jay-Yoon Lee), Seoul National University"
+        position: "Research Assistant"
+        location: 
+        start_date: "2025-09"
+        end_date: "2026-03"
+        highlights:
+          - '\[Research Project\] Reward Model Finetuning for Diffusion Model Alignment Using Tree Structured Trajectories'
+          - '\[Government Project\] Development of a Korean-English Translation Model for Safety Management of Pharmaceutical Products (Ministry of Food and Drug Safety): As project lead, developed a machine translation pipeline supporting an ensemble of inference strategies using in-context examples and dictionary entries, and instruction tuning & preference optimization training, outperforming several SOTA commercial models'
+          - '\[TA\] Special Topic: Multimodal & Diffusion Models'
+          - '\[Coursework\] Special Topic: Generative Modeling with Diffusion and Flow-Based Models'
+      - company: "SKI-ML Lab (PI: Jay-Yoon Lee), Seoul National University"
+        position: "Research Intern"
         location:
         start_date: "2023-03"
         end_date: "2025-08"
         highlights:
-          - Conducted research on applying energy based training with quality
-            estimators as score models for low resource machine translation,
-            advised by Prof. Jay-Yoon Lee
-          - Resulted in a publication at COLING 2025
+          - \[Research Project\] Application of energy based training with quality estimators as score models for low resource machine translation, resulted in a publication at COLING 2025
+          - \[Research Project\] Advised machine translation project, resulting in publication at ACL 2025
       - company: "NCSOFT NLP Center"
         position: "Research Intern"
         location:
         start_date: "2022-07"
         end_date: "2022-08"
         highlights:
-          - "Developed an efficient decision tree algorithm based on linguistic
-            features, word alignment, and multilingual knowledge graphs for
-            distinguishing literal and non-literal translation"
-    Publications:
-      - title: "Improving NMT Models by Retrofitting Quality Estimators into Trainable
-          Energy Loss"
+          - "Developed a decision tree classification algorithm for distinguishing literal and non-literal translation, using linguisitc features, alignment score from text embedding similarity, and multilingual knowledge graphs (>90% accuracy on open source English-Chinese dataset)"
+    publications:
+      - title: "Improving NMT Models by Retrofitting Quality Estimators into Trainable Energy Loss"
         authors:
           - "*Gahyun Yoo*"
           - "Jay-Yoon Lee"
-        publisher: COLING
-        date: "2025-01"
-      - title: "BridG MT: Enhancing LLMs' Machine Translation Capabilities with Sentence
-          Bridging and Gradual MT"
+        journal: International Conference on Computational Linguistics
+        date: 2025-01
+      - title: "BridG MT: Enhancing LLMs' Machine Translation Capabilities with Sentence Bridging and Gradual MT"
         authors:
           - "Seung-Woo Choi"
           - "*Gahyun Yoo*"
           - "Jay-Yoon Lee"
-        publisher: "ACL Findings"
-        date: "2025-07"
-      - title: "Generalizing Numerical Reasoning in Table Data through Operation
-          Sketches and Self-Supervised Learning"
+        journal: Findings of the Association for Computational Linguistics
+        date: 2025-07
+      - title: "Generalizing Numerical Reasoning in Table Data through Operation Sketches and Self-Supervised Learning"
         authors:
           - "Hanjun Cho"
           - "*Gahyun Yoo*"
           - "Hanseong Kim"
           - "Jay-Yoon Lee"
-        publisher: "TACL"
-        date: "2026"
-    Awards:
-      - title: "EFL 8th Best Speaker, SNUDA X KNC 2021"
-        awarder: "Korea Intervarsity Debate Association"
+        journal: "Transactions of the Association for Computational Linguistics"
+        date: "2026-05"
+    awards:
+      - name: "EFL 8th Best Speaker, SNUDA X KNC 2021"
+        location: "Korea Intervarsity Debate Association"
         date: "2021"
-      - title: "Bronze Medal, Korean Mathematical Olympiad"
-        awarder: "Korean Mathematical Society"
+      - name: "Bronze Medal, Korean Mathematical Olympiad"
+        location: "Korean Mathematical Society"
         date: "2014"
-    Presentations:
+    presentations:
       - bullet: Invited Seminar @ Kakao Mobility (Feb 2025)
-    "Extracurricular Activities":
+    extracurricular_activities:
       - label: "AttentionX"
         details: "Member of Artificial Intelligence Research Group (2023)"
       - label: "Waffle Studio"
-        details: "Member of Seoul National University Web Development Club (2021-2023)"
+        details: "Member of Seoul National University Web Development Club (2021-2023), developed the backend server of an interactive web editor application"
       - label: "SNUDA"
-        details: "Finance Minister and Member of Seoul National University Debate Club
-          (2020-2021)"
-    Projects:
-      - bullet: Development of a Korean-English Translation Model for Safety Management
-          of Pharmaceutical Products (Ministry of Food and Drug Safety) -
-          Implemented instruction tuning pipeline for various prompting
-          strategies & reinforcement learning baselines
-  website: "https://padme0421.github.io"
+        details: "Finance Minister and Member of Seoul National University Debate Club (2020-2021)"
+    skills:
+      - label: Languages
+        details: Python, C++, Java
+      - label: ML Frameworks
+        details: PyTorch, SGLang, VLLM, Tensorflow, Scikit-Learn
+      - label: Infrastructure
+        details: Docker
+    coursework:
+      - label: Math
+        details: Linear Algebra, Calculus 1&2, Statistical Computing and Lab, Mathematical Analysis, Discrete Mathematics
+      - label: Computer Science
+        details: Data Structures, Algorithms, Automata Theory, Logic Design, Computer Architecture, System Programming
+      - label: Artificial Intelligence
+        details: Basics of Deep Learning, Machine Learning and Deep Learning for Data Science 1&2, 'Special Topic - Generative Modeling with Diffusion and Flow-Based Models'
