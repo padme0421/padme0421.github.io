@@ -25,16 +25,23 @@
             </table>
           </div>
           <div class="col-xs-10 col-sm-10 col-md-10 mt-2 mt-md-0">
-            {% if entry.url %}
+            {% capture award_title %}
+              {% if entry.title %}{{ entry.title }}{% elsif entry.name %}{{ entry.name }}{% endif %}
+            {% endcapture %}
+            {% capture award_org %}
+              {% if entry.awarder %}{{ entry.awarder }}{% elsif entry.location %}{{ entry.location }}{% endif %}
+            {% endcapture %}
+
+            {% if entry.url and award_title != '' %}
               <h6 class="title font-weight-bold ml-1 ml-md-4">
-                <a href="{{ entry.url }}">{{ entry.title }}</a>
+                <a href="{{ entry.url }}">{{ award_title }}</a>
               </h6>
-            {% elsif entry.title %}
-              <h6 class="title font-weight-bold ml-1 ml-md-4">{{ entry.title }}</h6>
+            {% elsif award_title != '' %}
+              <h6 class="title font-weight-bold ml-1 ml-md-4">{{ award_title }}</h6>
             {% endif %}
 
-            {% if entry.awarder %}
-              <h6 class="ml-1 ml-md-4" style="font-size: 0.95rem">{{ entry.awarder }}</h6>
+            {% if award_org != '' %}
+              <h6 class="ml-1 ml-md-4" style="font-size: 0.95rem">{{ award_org }}</h6>
             {% endif %}
 
             {% if entry.summary %}
@@ -43,16 +50,23 @@
           </div>
         {% else %}
           <div class="col-xs-12 col-sm-12 col-md-12">
-            {% if entry.url %}
+            {% capture award_title %}
+              {% if entry.title %}{{ entry.title }}{% elsif entry.name %}{{ entry.name }}{% endif %}
+            {% endcapture %}
+            {% capture award_org %}
+              {% if entry.awarder %}{{ entry.awarder }}{% elsif entry.location %}{{ entry.location }}{% endif %}
+            {% endcapture %}
+
+            {% if entry.url and award_title != '' %}
               <h6 class="title font-weight-bold ml-1 ml-md-4">
-                <a href="{{ entry.url }}">{{ entry.title }}</a>
+                <a href="{{ entry.url }}">{{ award_title }}</a>
               </h6>
-            {% elsif entry.title %}
-              <h6 class="title font-weight-bold ml-1 ml-md-4">{{ entry.title }}</h6>
+            {% elsif award_title != '' %}
+              <h6 class="title font-weight-bold ml-1 ml-md-4">{{ award_title }}</h6>
             {% endif %}
 
-            {% if entry.awarder %}
-              <h6 class="ml-1 ml-md-4" style="font-size: 0.95rem">{{ entry.awarder }}</h6>
+            {% if award_org != '' %}
+              <h6 class="ml-1 ml-md-4" style="font-size: 0.95rem">{{ award_org }}</h6>
             {% endif %}
 
             {% if entry.summary %}

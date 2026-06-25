@@ -55,7 +55,7 @@ cv:
         start_date: "2022-07"
         end_date: "2022-08"
         highlights:
-          - "Developed a decision tree classification algorithm for distinguishing literal and non-literal translation, using linguisitc features, alignment score from text embedding similarity, and multilingual knowledge graphs (>90% accuracy on open source English-Chinese dataset)"
+          - "Developed a decision tree classification algorithm for distinguishing literal and non-literal translation, using linguistic features, alignment score from text embedding similarity, and multilingual knowledge graphs (>90% accuracy on open source English-Chinese dataset)"
     publications:
       - title: "Improving NMT Models by Retrofitting Quality Estimators into Trainable Energy Loss"
         authors:
@@ -107,4 +107,4 @@ cv:
       - label: Computer Science
         details: Data Structures, Algorithms, Automata Theory, Logic Design, Computer Architecture, System Programming
       - label: Artificial Intelligence
-        details: Basics of Deep Learning, Machine Learning and Deep Learning for Data Science 1&2, 'Special Topic - Generative Modeling with Diffusion and Flow-Based Models'
+        details: Basics of Deep Learning, Machine Learning and Deep Learning for Data Science 1&2, Special Topic - Generative Modeling with Diffusion and Flow-Based Models
