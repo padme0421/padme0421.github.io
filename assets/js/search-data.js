@@ -391,13 +391,7 @@ ninja.data = [{
           description: "",
           section: "Books",handler: () => {
               window.location.href = "/books/the_godfather/";
-            },},{id: "news-presented-qe-ebm-paper-at-coling-2025",
-          title: 'Presented QE-EBM paper at COLING 2025!',
-          description: "",
-          section: "News",},{id: "news-started-my-ai-engineer-internship-at-deepauto-ai",
-          title: 'Started my AI engineer internship at DeepAuto.AI!',
-          description: "",
-          section: "News",},{id: "projects-project-1",
+            },},{id: "projects-project-1",
           title: 'project 1',
           description: "with background image",
           section: "Projects",handler: () => {
